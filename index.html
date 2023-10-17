@@ -6,29 +6,53 @@
     <link rel="stylesheet" href="style.css" />
     <title>Console Plus</title>
   </head>
-  <body>
+  <body class="body">
     <!-- This is the header section of the page -->
-    <header>
+    <header class="js-header">
       <div class="nav-bar">
+        <span href="">
+          <img class="menu-icon js-menu-dark" src="img/menu-icon.jpg" alt="" />
+          <img
+            style="width: 22px; height: 25px; margin-left: 10px"
+            class="menu-icon js-menu-light menuOff"
+            src="img/menu-light.png"
+            alt=""
+          />
+        </span>
         <a href="">
-            <img class="menu-icon" src="img/menu-icon.jpg" alt="" />
-        </a>
-        <a href="">
-            <img class="logo" src="img/logo.png" alt="" />
+          <img class="logo" src="img/logo.png" alt="" />
         </a>
         <div class="nav-right">
-            <a href="">
-                <div class="newsletter">
-                  <img src="img/notif-icon.png" alt="" />
-                  <p>Newsletter</p>
-                </div>
-            </a>
-            <a href="">
-                <button class="login">Log in</button>
-            </a>
-            <div class="light-li">
-              <img class="light-mode" src="img/light-mode.png" alt="" />
+          <a href="">
+            <div class="newsletter">
+              <img class="js-bell-dark" src="img/notif-icon.png" alt="" />
+              <img
+                class="js-bell-light bellOff"
+                src="img/bell-light.png"
+                alt=""
+              />
+              <p>Newsletter</p>
             </div>
+          </a>
+          <button class="login js-login">Log in</button>
+          <div class="light-li">
+            <img
+              class="light-mode js-light"
+              src="img/light-mode.png"
+              alt=""
+              onclick="
+                    changeMode('light');
+                "
+            />
+            <img
+              class="light-mode js-dark lightOff"
+              src="img/dark-mode.png"
+              alt=""
+              onclick="
+                    changeMode('dark');
+              "
+            />
+          </div>
         </div>
       </div>
     </header>
@@ -40,5 +64,40 @@
     <footer>
       <!-- Footer content (e.g., copyright information, links) -->
     </footer>
+
+    <script>
+      function changeMode(mode) {
+        let body = document.querySelector(".body");
+        let header = document.querySelector(".js-header");
+        let menuDark = document.querySelector(".js-menu-dark");
+        let menuLight = document.querySelector(".js-menu-light");
+        let bellLight = document.querySelector(".js-bell-light");
+        let bellDark = document.querySelector(".js-bell-dark");
+        let login = document.querySelector(".js-login");
+        let lightMode = document.querySelector(".js-light");
+        let darkMode = document.querySelector(".js-dark");
+        if (mode == "dark") {
+          lightMode.classList.toggle("lightOff");
+          darkMode.classList.toggle("lightOff");
+          menuDark.classList.toggle("menuOff");
+          menuLight.classList.toggle("menuOff");
+          bellDark.classList.toggle("bellOff");
+          bellLight.classList.toggle("bellOff");
+          body.classList.toggle("body-light");
+          header.classList.toggle("header-light");
+          login.classList.toggle("login-light");
+        } else {
+          darkMode.classList.toggle("lightOff");
+          lightMode.classList.toggle("lightOff");
+          menuLight.classList.toggle("menuOff");
+          menuDark.classList.toggle("menuOff");
+          bellLight.classList.toggle("bellOff");
+          bellDark.classList.toggle("bellOff");
+          body.classList.toggle("body-light");
+          header.classList.toggle("header-light");
+          login.classList.toggle("login-light");
+        }
+      }
+    </script>
   </body>
 </html>
