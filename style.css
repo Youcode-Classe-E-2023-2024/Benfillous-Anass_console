@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Styles for the header section */
+header {
+    width: 100%;
+    height: 64px;
+    background-color: #1E1E1E;
+}
+
+.nav-bar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0 20px;
+}
+
+.nav-bar a:nth-child(1) {
+    width: 25%;
+}
+
+.nav-bar a:nth-child(2) {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-bar div {
+    width: 25%;
+}
+
+.nav-right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.menu-icon {
+    width: 42px;
+    height: 42px;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 172px;
+    height: 43px;
+}
+
+.newsletter {
+    width: 10%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    color: white;
+}
+
+.newsletter img {
+    width: 24px;
+    height: 28;
+}
+
+.login {
+    width: 75px;
+    height: 25px;
+    border-radius: 20px;
+    border: none;
+}
+
+.light-li {
+    display: flex;
+    justify-self: flex-end;
+}
+
+.light-mode {
+    width: 28px;
+    height: 28px;
+}
+
+/* Styles for the main content section */
+main {
+    /* Add your main content styles here */
+}
+
+/* Styles for the footer section */
+footer {
+    /* Add your footer styles here */
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-bar {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .newsletter, .light-li {
+        display: none;
+    }
+    .nav-right {
+        justify-self: flex-start;
+        justify-content: flex-start;
+        padding: 0;
+    }
+}
