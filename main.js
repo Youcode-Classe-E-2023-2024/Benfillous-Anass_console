@@ -1,4 +1,5 @@
 const navList = document.querySelector(".nav-list");
+const searchBar = document.querySelector(".search-background");
 function changeMode() {
   const body = document.querySelector(".body");
   const header = document.querySelector(".js-header");
@@ -30,8 +31,13 @@ function changeMode() {
   sectionTitle.classList.toggle("sectionTitleOff");
   sectionTitle2.classList.toggle("sectionTitleOff");
   navList.classList.toggle("nav-list-mode");
-}
+};
 
 function closeNav() {
   navList.classList.toggle("nav-list-off");
-}
+};
+
+function closeSearch() {
+    searchBar.classList.toggle("search-off");
+
+};

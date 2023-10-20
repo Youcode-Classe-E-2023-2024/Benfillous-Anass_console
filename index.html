@@ -8,6 +8,18 @@
     <title>Console Plus</title>
   </head>
   <body class="body body-text">
+    <div class="search-background search-off">
+      <img
+            class="close-icon close-icon-light close-search"
+            src="img/close-icon-white.png"
+            alt=""
+            onclick="closeSearch();"
+          />
+      <div class="search-bar">
+        <img class="search-icon-white search-icon search-fixed" src="img/search-icon-white.png" alt="">
+        <input class="search-input" type="text" name="search" placeholder="Search" id="searching">
+      </div>
+    </div>
     <!-- This is the header section of the page -->
     <header class="js-header">
       <ul class="nav-list nav-list-off">
@@ -16,6 +28,9 @@
             class="search-icon-white search-icon"
             src="img/search-icon-white.png"
             alt=""
+            onclick="closeSearch();
+              closeNav();
+            "
           />
           <img
             class="search-icon-dark search-icon search-off"
@@ -26,12 +41,6 @@
           <img
             class="close-icon close-icon-light"
             src="img/close-icon-white.png"
-            alt=""
-            onclick="closeNav();"
-          />
-          <img
-            class="close-icon close-icon-dark close-off"
-            src="img/close-icon.png"
             alt=""
             onclick="closeNav();"
           />
@@ -61,17 +70,17 @@
       <div class="nav-bar">
         <span href="">
           <img
-            class="menu-icon js-menu-dark"
-            onclick="closeNav()"
-            src="img/menu-icon.jpg"
-            alt=""
+          class="menu-icon js-menu-dark"
+          onclick="closeNav()"
+          src="img/menu-icon.jpg"
+          alt=""
           />
           <img
-            style="width: 22px; height: 25px; margin-left: 10px"
-            class="menu-icon js-menu-light menuOff"
-            src="img/menu-light.png"
-            alt=""
-            onclick="closeNav();"
+          style="width: 22px; height: 25px; margin-left: 10px"
+          class="menu-icon js-menu-light menuOff"
+          src="img/menu-light.png"
+          alt=""
+          onclick="closeNav();"
           />
         </span>
         <a href="">
@@ -81,9 +90,9 @@
           <a href="">
             <div class="newsletter">
               <img
-                class="js-bell-dark js-bell-dark-list"
-                src="img/notif-icon.png"
-                alt=""
+              class="js-bell-dark js-bell-dark-list"
+              src="img/notif-icon.png"
+              alt=""
               />
               <img
                 class="js-bell-light js-bell-light-list bellOff"
