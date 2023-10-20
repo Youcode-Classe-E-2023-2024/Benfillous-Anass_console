@@ -6,11 +6,12 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #1E1E1E;
+    background-color: #101010;
+    height: 1000px;
 }
 
 .body-light {
-    background-color: white;
+    background-color: rgba(223, 222, 222, 0.713);
 }
 
 a {
@@ -23,12 +24,68 @@ header {
     width: 100%;
     height: 64px;
     background-color: #1E1E1E;
-    border: 0.1px solid gray;
 }
 
 .header-light {
-    background: white;
-    border: 0.1px solid rgb(0, 0, 0);
+    background: rgba(190, 189, 189, 0.171);
+}
+
+.nav-list {
+    position: fixed;
+    background-color: #000000cd;
+    z-index: 4;
+    width: 420px;
+    height: 715px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+
+
+.nav-list-header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 130px;
+    margin: 15px 0;
+}
+
+.nav-list-off {
+    display: none;
+}
+
+.search-icon, .close-icon {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.search-icon {
+    justify-self: flex-start;
+}
+
+.close-icon {
+    justify-self: flex-end;
+}
+
+.close-off, .search-off {
+    display: none;
+}
+
+.nav-list-main {
+    padding: 30px;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+}
+
+.bell-icon, .light-mode {
+    width: 28px;
+    height: 28px;
 }
 
 .nav-bar {
@@ -64,6 +121,7 @@ header {
     width: 42px;
     height: 42px;
     justify-content: flex-start;
+    cursor: pointer;
 }
 
 .menuOff{
@@ -71,7 +129,7 @@ header {
 }
 
 .logo {
-    width: 172px;
+    width: 180px;
     height: 43px;
 }
 
@@ -111,6 +169,7 @@ header {
 .light-mode {
     width: 28px;
     height: 28px;
+    cursor: pointer;
 }
 
 .lightOff {
@@ -120,9 +179,128 @@ header {
 .bellOff {
     display: none !important;
 }
+
+.newsLight {
+    color: black;
+}
+
 /* Styles for the main content section */
 main {
-    /* Add your main content styles here */
+    margin: 90px 100px;
+}
+
+.hero {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0 20px;
+}
+
+.hero-title {
+    color: white;
+    position: absolute;
+    font-weight: 700;
+}
+
+.title-right {
+    margin-top: 180px;
+    margin-left: 12px;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.title-left {
+    margin-top: 394px;
+    margin-left: 20px;
+    z-index: 2;
+}
+
+.hero-genre {
+    color: white;
+    background-color: #FF7628;
+    padding: 5px 3px;
+    font-weight: 700;
+}
+
+.left-genre {
+    position: absolute;
+    margin-top: 360px;
+    margin-left: 20px;
+    z-index: 1;
+}
+
+.right-genre {
+    position: absolute;
+    z-index: 1;
+    margin-top: 150px;
+    margin-left: 12px;
+
+}
+
+.left-side {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.left-side {
+    height: 100%;
+    width: 100%;
+}
+
+
+.left-img {
+    width: 100%;
+    height: 435px;
+    z-index: 3;
+}
+
+.right-side {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 !important;
+    row-gap: 10px;
+    justify-self: flex-end;
+    
+}
+
+.right-img {
+    position: absolute;
+    width: 20%;
+    height: 30.5%;
+    z-index: 1;
+}
+
+.bottom {
+    display: flex;
+    margin-top: 100px;
+}
+
+.latest {
+    width: 78%;
+}
+
+.section-title {
+    background-color: #FF7628;
+    width: 20px;
+    height: 20px;
+}
+
+.section-title span {
+    margin-left: 25px;
+    position: absolute;
+    font-size: 12px;
+    color: white;
+}
+
+.sectionTitleOff {
+    color: black !important;
+}
+
+.bottom-text {
+    color: black !important;
 }
 
 /* Styles for the footer section */

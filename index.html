@@ -4,19 +4,74 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <title>Console Plus</title>
   </head>
-  <body class="body">
+  <body class="body body-text">
     <!-- This is the header section of the page -->
     <header class="js-header">
+      <ul class="nav-list nav-list-off">
+        <li class="nav-list-header">
+          <img
+            class="search-icon-white search-icon"
+            src="img/search-icon-white.png"
+            alt=""
+          />
+          <img
+            class="search-icon-dark search-icon search-off"
+            src="img/search-icon-black.png"
+            alt=""
+          />
+          <button class="login js-login-dark">Log in</button>
+          <img
+            class="close-icon close-icon-light"
+            src="img/close-icon-white.png"
+            alt=""
+            onclick="closeNav();"
+          />
+          <img
+            class="close-icon close-icon-dark close-off"
+            src="img/close-icon.png"
+            alt=""
+            onclick="closeNav();"
+          />
+        </li>
+        <a href=""><li class="nav-list-main">GAME NEWS</li></a>
+        <a href=""><li class="nav-list-main">Coming Soon</li></a>
+        <a href="">
+          <li class="nav-list-main nav-list-main-light">
+            <img class="bell-icon" src="img/notif-icon.png" alt="" />
+            Newsletter
+          </li>
+          </a>
+        <li class="nav-list-main" onclick="
+        changeMode();
+        ">
+            <img
+            style="cursor: pointer;"
+              class="light-mode"
+              src="img/light-mode.png"
+              alt=""
+            />
+            <span style="cursor: pointer;">Light Mode</span>
+          </li>
+          </a>
+        <a href=""><li class="nav-list-main">About Us</li></a>
+      </ul>
       <div class="nav-bar">
         <span href="">
-          <img class="menu-icon js-menu-dark" src="img/menu-icon.jpg" alt="" />
+          <img
+            class="menu-icon js-menu-dark"
+            onclick="closeNav()"
+            src="img/menu-icon.jpg"
+            alt=""
+          />
           <img
             style="width: 22px; height: 25px; margin-left: 10px"
             class="menu-icon js-menu-light menuOff"
             src="img/menu-light.png"
             alt=""
+            onclick="closeNav();"
           />
         </span>
         <a href="">
@@ -25,13 +80,17 @@
         <div class="nav-right">
           <a href="">
             <div class="newsletter">
-              <img class="js-bell-dark" src="img/notif-icon.png" alt="" />
               <img
-                class="js-bell-light bellOff"
+                class="js-bell-dark js-bell-dark-list"
+                src="img/notif-icon.png"
+                alt=""
+              />
+              <img
+                class="js-bell-light js-bell-light-list bellOff"
                 src="img/bell-light.png"
                 alt=""
               />
-              <p>Newsletter</p>
+              <p class="js-news">Newsletter</p>
             </div>
           </a>
           <button class="login js-login">Log in</button>
@@ -41,7 +100,7 @@
               src="img/light-mode.png"
               alt=""
               onclick="
-                    changeMode('light');
+                    changeMode();
                 "
             />
             <img
@@ -49,7 +108,7 @@
               src="img/dark-mode.png"
               alt=""
               onclick="
-                    changeMode('dark');
+                    changeMode();
               "
             />
           </div>
@@ -58,46 +117,82 @@
     </header>
     <!-- Main content section -->
     <main>
-      <!-- Your main page content goes here -->
+      <div class="hero">
+        <div class="left-side">
+          <a href="">
+            <img
+              class="left-img"
+              src="img/spider-man-2-miles-morales-and-peter-parker.avif"
+              alt=""
+            />
+            <a href="" class="hero-genre left-genre"> GAMES </a>
+            <h2 class="hero-title title-left">Marvel's Spider-Man 2 Review</h2>
+          </a>
+        </div>
+        <div class="right-side">
+          <div>
+            <a href="">
+              <img
+                class="right-img"
+                src="img/luminous-realms-promo-image.avif"
+                alt=""
+              />
+              <a href="" class="hero-genre right-genre"> GAMES </a>
+              <h2 class="hero-title title-right">
+                Marvel's Spider-Man 2 Review
+              </h2>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img class="right-img" src="img/twd-endings.avif" alt="" />
+              <a href="" class="hero-genre right-genre"> GAMES </a>
+              <h2 class="hero-title title-right">
+                Marvel's Spider-Man 2 Review
+              </h2>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img class="right-img" src="img/xbox-activision.avif" alt="" />
+              <a href="" class="hero-genre right-genre"> GAMES </a>
+              <h2 class="hero-title title-right">
+                Marvel's Spider-Man 2 Review
+              </h2>
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <img
+                class="right-img"
+                src="img/best-oled-monitors-for-gaming-asus-gigabyte-lg-gamerant-thumb.avif"
+                alt=""
+              />
+              <a href="" class="hero-genre right-genre"> GAMES </a>
+              <h2 class="hero-title title-right">
+                Marvel's Spider-Man 2 Review
+              </h2>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="latest">
+          <div class="section-title">
+            <span class="js-section-title">LATEST</span>
+          </div>
+          <div class="news"></div>
+        </div>
+        <div class="fixed-side">
+          <div class="section-title">
+            <span class="js-section-title2">POPULAR</span>
+          </div>
+        </div>
+      </div>
     </main>
     <!-- Footer section at the bottom of the page -->
-    <footer>
-      <!-- Footer content (e.g., copyright information, links) -->
-    </footer>
+    <footer></footer>
 
-    <script>
-      function changeMode(mode) {
-        let body = document.querySelector(".body");
-        let header = document.querySelector(".js-header");
-        let menuDark = document.querySelector(".js-menu-dark");
-        let menuLight = document.querySelector(".js-menu-light");
-        let bellLight = document.querySelector(".js-bell-light");
-        let bellDark = document.querySelector(".js-bell-dark");
-        let login = document.querySelector(".js-login");
-        let lightMode = document.querySelector(".js-light");
-        let darkMode = document.querySelector(".js-dark");
-        if (mode == "dark") {
-          lightMode.classList.toggle("lightOff");
-          darkMode.classList.toggle("lightOff");
-          menuDark.classList.toggle("menuOff");
-          menuLight.classList.toggle("menuOff");
-          bellDark.classList.toggle("bellOff");
-          bellLight.classList.toggle("bellOff");
-          body.classList.toggle("body-light");
-          header.classList.toggle("header-light");
-          login.classList.toggle("login-light");
-        } else {
-          darkMode.classList.toggle("lightOff");
-          lightMode.classList.toggle("lightOff");
-          menuLight.classList.toggle("menuOff");
-          menuDark.classList.toggle("menuOff");
-          bellLight.classList.toggle("bellOff");
-          bellDark.classList.toggle("bellOff");
-          body.classList.toggle("body-light");
-          header.classList.toggle("header-light");
-          login.classList.toggle("login-light");
-        }
-      }
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
