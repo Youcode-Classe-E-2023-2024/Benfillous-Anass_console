@@ -241,19 +241,49 @@ input[type="text"] {
 
 /* Styles for the main content section */
 main {
+  width: 100%;
+  height: 1000px;
+  margin-top: 40px;
+}
 
+.hero {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
+  position: relative;
+  background-color: #171717;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  color: white;
+}
 
+.container div {
+  width: 50%;
+  height: 100%;
 }
 
 .container h1 {
+  position: absolute;
   align-self: center;
+  left: 20Px;
 }
 
 .container p {
-  width: 80%;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.img-hero {
+  width: 100%;
+  height: 100%;
 }
 
 /* Styles for the footer section */
