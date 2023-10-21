@@ -1,0 +1,112 @@
+
+button {
+  cursor: pointer;
+}
+.login-popup {
+  position: fixed;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d9d9d9;
+  padding: 40px 40px;
+  width: 350px;
+  height: 345px;
+  top: 25%;
+  left: 36%;
+}
+
+.login-off {
+  display: none;
+}
+
+.login-popup h2 {
+  height: 12.5%;
+}
+
+.login-popup button img {
+  width: 20px;
+  height: 20px;
+}
+
+.login-popup input {
+  width: 94%;
+  height: 35px;
+  font-size: 18px;
+  border: none;
+  padding: 0 10px;
+  outline: none;
+}
+
+.login-popup p:nth-child(4) {
+  font-size: 10px;
+  height: 20px;
+  align-self: flex-end;
+  justify-self: flex-start;
+  margin-right: 17px;
+  cursor: pointer;
+}
+
+.login-popup p:nth-child(4) a {
+  color: black;
+
+}
+
+.login-popup button {
+  width: 100%;
+  height: 45px;
+  border: none;
+  padding: 10px;
+}
+.login-popup button:nth-child(5) {
+  background-color: #ff7628;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button img {
+    margin-right:10px 0;
+}
+
+button span {
+    justify-self: center;
+    align-self: center;
+    font-weight: 700;
+    color: #7F7F7F;
+    font-size: 18px;
+  }
+  
+  .login-popup p:nth-child(6) {
+    font-size: 12px;
+  }
+  
+  .login-popup p span {
+  cursor: pointer;
+    color: #ff7628;
+}
+
+.login-close{
+  position: fixed;
+  right: 0;
+  margin: 40px 80px;
+}
+
+.login-bg {
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.806);
+}
+
+.conditions {
+  text-align: center;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 300;
+}
+

@@ -3,11 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/homepage.css" />
+    <link rel="stylesheet" href="style/login.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <title>Console Plus</title>
   </head>
   <body class="body body-text">
+    <!-- This is the search pop up -->
     <div class="search-background search-off">
       <img
             class="close-icon close-icon-light close-search"
@@ -20,6 +22,45 @@
         <input class="search-input" type="text" name="search" placeholder="Search" id="searching">
       </div>
     </div>
+    <!-- This is the login pop up -->
+    <div class="login-bg login-off">
+      <img
+            class="close-icon close-icon-light login-close"
+            src="img/close-icon-white.png"
+            alt=""
+            onclick="toggleLogin();"
+          />
+          <div class="login-popup">
+            <h2>log In</h2>
+            <input placeholder="Email Address" type="email">
+            <input placeholder="Enter password" type="password">
+            <p> <a href="passwd-recover.html">Forgot your password?</a></p>
+            <button>Log In</button>
+            <p>Don’t have an account yet? <span onclick="toggleSignup(); toggleLogin();">Register now</span></p>
+            <p>or</p>
+            <button><img src="img/Google__G__Logo.svg.png" alt=""><span>Sign in with Google</span></button>
+        </div>
+    </div>
+        <!-- This is the signup pop up -->
+        <div class="login-bg js-signup login-off">
+          <img
+                class="close-icon close-icon-light login-close"
+                src="img/close-icon-white.png"
+                alt=""
+                onclick="toggleSignup();"
+              />
+              <div class="login-popup">
+                <h2>Create your account</h2>
+                <input placeholder="Email Address" type="email">
+                <input placeholder="Enter password" type="password">
+                <p> <a href="passwd-recover.html">*Required: 8 chars, 1 capital letter, 1 number</a></p>
+                <button>DONE</button>
+                <p>Already have an account? <span onclick="toggleSignup(); toggleLogin();" style="cursor: pointer;">Login</span></p>
+                <p style="color: rgba(0, 0, 0, 0.482); font-size: 14px;">or</p>
+                <button><img src="img/Google__G__Logo.svg.png" alt=""><span>Sign in with Google</span></button>
+                <p class="conditions">By continuing, you agree to <span style="color: #FF7628;">the Privacy Policy</span> and <span style="color: #FF7628;">Terms of Use.</span> You also agree to receive our newsletters, you can opt-out any time.</p>
+            </div>
+        </div>
     <!-- This is the header section of the page -->
     <header class="js-header">
       <ul class="nav-list nav-list-off">
@@ -37,7 +78,9 @@
             src="img/search-icon-black.png"
             alt=""
           />
-          <button class="login js-login-dark">Log in</button>
+          <button onclick="toggleLogin();
+              closeNav();
+          " class="login js-login-dark">Log in</button>
           <img
             class="close-icon close-icon-light"
             src="img/close-icon-white.png"
@@ -67,11 +110,11 @@
           </a>
         <a href=""><li class="nav-list-main">About Us</li></a>
       </ul>
-      <div class="nav-bar">
+      <nav class="nav-bar">
         <span href="">
           <img
           class="menu-icon js-menu-dark"
-          onclick="closeNav()"
+          onclick="toggleNav()"
           src="img/menu-icon.jpg"
           alt=""
           />
@@ -80,10 +123,10 @@
           class="menu-icon js-menu-light menuOff"
           src="img/menu-light.png"
           alt=""
-          onclick="closeNav();"
+          onclick="toggleNav();"
           />
         </span>
-        <a href="">
+        <a href="index.html">
           <img class="logo" src="img/logo.png" alt="" />
         </a>
         <div class="nav-right">
@@ -102,7 +145,7 @@
               <p class="js-news">Newsletter</p>
             </div>
           </a>
-          <button class="login js-login">Log in</button>
+          <button onclick="toggleLogin(); closeNav();" class="login js-login">Log in</button>
           <div class="light-li">
             <img
               class="light-mode js-light"
@@ -122,7 +165,7 @@
             />
           </div>
         </div>
-      </div>
+      </nav>
     </header>
     <!-- Main content section -->
     <main>
@@ -153,7 +196,7 @@
             </a>
           </div>
           <div>
-            <a href="">
+            <a href="https://chat.openai.com/">
               <img class="right-img" src="img/twd-endings.avif" alt="" />
               <a href="" class="hero-genre right-genre"> GAMES </a>
               <h2 class="hero-title title-right">
@@ -190,18 +233,121 @@
           <div class="section-title">
             <span class="js-section-title">LATEST</span>
           </div>
-          <div class="news"></div>
+          <div class="news">
+            <img src="img/20231018162306_1.avif" alt="">
+            <div class="text-side">
+              <p>THE LORDS OF THE FALLEN</p>
+              <h2>Lords of the Fallen: Where to Get the Vanguard Armor Set</h2>
+              <p>The Vanguard set in Lords of the Fallen offers solid protection without weighing players down. Here's where to get it.</p>
+              <p>By <span>Marc Santos</span></p>
+            </div>
+          </div>
+          <div class="news">
+            <img src="img/pokemon-lets-go-trailer-eevee-with-hat.avif" alt="">
+            <div class="text-side">
+              <p>THE LORDS OF THE FALLEN</p>
+              <h2>Lords of the Fallen: Where to Get the Vanguard Armor Set</h2>
+              <p>The Vanguard set in Lords of the Fallen offers solid protection without weighing players down. Here's where to get it.</p>
+              <p>By <span>Marc Santos</span></p>
+            </div>
+          </div>
+          <div class="news">
+            <img src="img/pokemon-eeveelutions-eevee-evolutions-halloween-fan-art.avif" alt="">
+            <div class="text-side">
+              <p>THE LORDS OF THE FALLEN</p>
+              <h2>Lords of the Fallen: Where to Get the Vanguard Armor Set</h2>
+              <p>The Vanguard set in Lords of the Fallen offers solid protection without weighing players down. Here's where to get it.</p>
+              <p>By <span>Marc Santos</span></p>
+            </div>
+          </div>
+          <div class="news">
+            <img src="img/20231018162120_1.avif" alt="">
+            <div class="text-side">
+              <p>THE LORDS OF THE FALLEN</p>
+              <h2>Lords of the Fallen: Where to Get the Vanguard Armor Set</h2>
+              <p>The Vanguard set in Lords of the Fallen offers solid protection without weighing players down. Here's where to get it.</p>
+              <p>By <span>Marc Santos</span></p>
+            </div>
+          </div>
+          <div class="news">
+            <img src="img/20231018162306_1.avif" alt="">
+            <div class="text-side">
+              <p>THE LORDS OF THE FALLEN</p>
+              <h2>Lords of the Fallen: Where to Get the Vanguard Armor Set</h2>
+              <p>The Vanguard set in Lords of the Fallen offers solid protection without weighing players down. Here's where to get it.</p>
+              <p>By <span>Marc Santos</span></p>
+            </div>
+          </div>
+          <div class="news">
+            <img src="img/pokemon-lets-go-trailer-eevee-with-hat.avif" alt="">
+            <div class="text-side">
+              <p>THE LORDS OF THE FALLEN</p>
+              <h2>Lords of the Fallen: Where to Get the Vanguard Armor Set</h2>
+              <p>The Vanguard set in Lords of the Fallen offers solid protection without weighing players down. Here's where to get it.</p>
+              <p>By <span>Marc Santos</span></p>
+            </div>
+          </div>
+          <div class="news">
+            <img src="img/pokemon-eeveelutions-eevee-evolutions-halloween-fan-art.avif" alt="">
+            <div class="text-side">
+              <p>THE LORDS OF THE FALLEN</p>
+              <h2>Lords of the Fallen: Where to Get the Vanguard Armor Set</h2>
+              <p>The Vanguard set in Lords of the Fallen offers solid protection without weighing players down. Here's where to get it.</p>
+              <p>By <span>Marc Santos</span></p>
+            </div>
+          </div>
+          <div class="news">
+            <img src="img/20231018162120_1.avif" alt="">
+            <div class="text-side">
+              <p>THE LORDS OF THE FALLEN</p>
+              <h2>Lords of the Fallen: Where to Get the Vanguard Armor Set</h2>
+              <p>The Vanguard set in Lords of the Fallen offers solid protection without weighing players down. Here's where to get it.</p>
+              <p>By <span>Marc Santos</span></p>
+            </div>
+          </div>
         </div>
         <div class="fixed-side">
           <div class="section-title">
             <span class="js-section-title2">POPULAR</span>
           </div>
+          <div class="popular">
+            <img src="img/destiny-2-how-to-farm-spectral-pages4.avif" alt="">
+            <h2>Destiny 2: How to Farm Spectral and Manifested Pages (2023)</h2>
+          </div>
+          <div class="popular">
+            <img src="img/destiny-2-how-to-farm-spectral-pages4.avif" alt="">
+            <h2>Destiny 2: How to Farm Spectral and Manifested Pages (2023)</h2>
+          </div>
+          <div class="popular">
+            <img src="img/destiny-2-how-to-farm-spectral-pages4.avif" alt="">
+            <h2>Destiny 2: How to Farm Spectral and Manifested Pages (2023)</h2>
+          </div>
+          <div class="section-title">
+            <span class="js-section-title2">TRANDING</span>
+          </div>
+          <div class="tranding">
+            <img src="img/X-Mentor-Anime-Characters-Who-Are-Awful-To-Their-Students-Saitama-(One-Punch-Man) (1).avif" alt="">
+            <h2>Destiny 2: How to Farm Spectral and Manifested Pages (2023)</h2>
+          </div>
+          <div class="tranding">
+            <img src="img/X-Mentor-Anime-Characters-Who-Are-Awful-To-Their-Students-Saitama-(One-Punch-Man) (1).avif" alt="">
+            <h2>Destiny 2: How to Farm Spectral and Manifested Pages (2023)</h2>
+          </div>
+          <div class="tranding">
+            <img src="img/X-Mentor-Anime-Characters-Who-Are-Awful-To-Their-Students-Saitama-(One-Punch-Man) (1).avif" alt="">
+            <h2>Destiny 2: How to Farm Spectral and Manifested Pages (2023)</h2>
+          </div>
+          
         </div>
       </div>
     </main>
     <!-- Footer section at the bottom of the page -->
-    <footer></footer>
+    <footer>
+      <img class="logo" src="img/logo.png" alt="">
+      <p> <span>Copyright © 2023 Consoleplus.com</span></p>
+    </footer>
 
-    <script src="main.js"></script>
+    <script src="scripts/login.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

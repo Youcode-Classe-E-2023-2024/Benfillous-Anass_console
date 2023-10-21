@@ -1,0 +1,115 @@
+html {
+  width: 100%;
+}
+
+main {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+
+.recover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d9d9d9;
+  padding: 40px 40px;
+  width: 350px;
+  height: 300px;
+  top: 25%;
+  left: 36%;
+}
+
+.login-off {
+  display: none;
+}
+
+.recover h2 {
+  height: 12.5%;
+  color: #ff7628;
+  align-self: flex-start;
+}
+
+.recover button img {
+  width: 20px;
+  height: 20px;
+}
+
+.recover input {
+  width: 94%;
+  height: 35px;
+  font-size: 18px;
+  border: none;
+  padding: 0 10px;
+  outline: none;
+}
+
+.recover p:nth-child(5) {
+  font-size: 10px;
+  height: 20px;
+  align-self: flex-end;
+  justify-self: flex-start;
+  margin-right: 17px;
+  cursor: pointer;
+}
+
+.recover p:nth-child(5) span{
+  color: #ff7628;
+}
+
+.recover p:nth-child(2) {
+  align-self: flex-start;
+}
+
+.recover button {
+  width: 100%;
+  height: 45px;
+  border: none;
+  padding: 10px;
+}
+.recover button:nth-child(4) {
+  background-color: #ff7628;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button img {
+    justify-self: center;
+    align-self: center;
+    margin-right:10px 0;
+}
+
+button span {
+    height: 100%;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  .recover p:nth-child(6) {
+    font-size: 12px;
+  }
+  
+  .recover p span {
+  cursor: pointer;
+    color: #ff7628;
+}
+
+.login-close{
+  position: fixed;
+  right: 0;
+  margin: 40px 80px;
+}
+
+.black-bg {
+  position: absolute;
+  z-index: 7;
+  background-color: rgba(0, 0, 0, 0);
+  top: 25%;
+  left: 36%;
+  width: 397px;
+  height: 395px;
+}
