@@ -29,9 +29,6 @@ if (checker === "on") {
   header.classList.toggle("header-light");
   login.classList.toggle("login-light");
   loginDark.classList.toggle("login-light");
-  news.classList.toggle("newsLight");
-  sectionTitle.classList.toggle("sectionTitleOff");
-  sectionTitle2.classList.toggle("sectionTitleOff");
   navList.classList.toggle("nav-list-mode");
 }
 
@@ -47,10 +44,8 @@ function changeMode() {
   login.classList.toggle("login-light");
   loginDark.classList.toggle("login-light");
   news.classList.toggle("newsLight");
-  sectionTitle.classList.toggle("sectionTitleOff");
-  sectionTitle2.classList.toggle("sectionTitleOff");
   navList.classList.toggle("nav-list-mode");
-
+  mode();
   savingMode();
 }
 
