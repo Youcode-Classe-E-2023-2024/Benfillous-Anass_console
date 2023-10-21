@@ -15,6 +15,7 @@ const darkMode = document.querySelector(".js-dark");
 const news = document.querySelector(".js-news");
 const sectionTitle = document.querySelector(".js-section-title");
 const sectionTitle2 = document.querySelector(".js-section-title2");
+const about = document.querySelector(".js-about");
 
 let checker = localStorage.getItem("mode");
 
@@ -25,6 +26,7 @@ if (checker === "on") {
   menuDark.classList.toggle("menuOff");
   bellLight.classList.toggle("bellOff");
   bellDark.classList.toggle("bellOff");
+  news.classList.toggle("newsLight");
   body.classList.toggle("body-light");
   header.classList.toggle("header-light");
   login.classList.toggle("login-light");

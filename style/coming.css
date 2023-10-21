@@ -241,23 +241,11 @@ input[type="text"] {
 
 /* Styles for the main content section */
 main {
-  height: 667px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 
 .container {
-  width: 90%;
-  height: 70%;
-  display: flex;
-  flex-wrap: wrap;
-  color: white;
-}
 
-.about-off {
-  color: #101010;
 }
 
 .container h1 {
