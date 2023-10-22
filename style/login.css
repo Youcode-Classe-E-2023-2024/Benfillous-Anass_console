@@ -4,12 +4,14 @@ button {
 }
 .login-popup {
   position: fixed;
-  z-index: 5;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: #d9d9d9;
+  box-shadow: rgb(55, 55, 55) 0px 5px 15px;
+  border-radius: 30px;;
   padding: 40px 40px;
   width: 350px;
   height: 345px;
@@ -37,6 +39,8 @@ button {
   border: none;
   padding: 0 10px;
   outline: none;
+  border-radius: 7px;
+  cursor: pointer;
 }
 
 .login-popup p:nth-child(4) {
@@ -59,7 +63,7 @@ button {
   border: none;
   padding: 10px;
 }
-.login-popup button:nth-child(5) {
+.login-popup input:nth-child(5) {
   background-color: #ff7628;
   color: white;
   font-weight: 500;

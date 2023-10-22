@@ -13,4 +13,3 @@ function toggleSignup() {
 function closeNav() {
     Navclosed.classList.add("nav-list-off");
 }
-

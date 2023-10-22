@@ -37,7 +37,7 @@
     background-color: #000000cd;
     z-index: 4;
     width: 390px;
-    height: 715px;
+    height: 100%;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -260,6 +260,7 @@ footer {
     position: relative;
     margin-top: auto;
     bottom: 0;
+    z-index: 10;
   }
   
   footer img {

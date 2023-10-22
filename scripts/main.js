@@ -14,6 +14,8 @@ const login = document.querySelector(".js-login");
 const loginDark = document.querySelector(".js-login-dark");
 const lightMode = document.querySelector(".js-light");
 const darkMode = document.querySelector(".js-dark");
+const lightWord = document.querySelector(".js-dark-light-2");
+const darkWord = document.querySelector(".js-dark-light");
 const news = document.querySelector(".js-news");
 const sectionTitle = document.querySelector(".js-section-title");
 const sectionTitle2 = document.querySelector(".js-section-title2");
@@ -36,6 +38,8 @@ if (checker === "on") {
   login.classList.toggle("login-light");
   loginDark.classList.toggle("login-light");
   navList.classList.toggle("nav-list-mode");
+  darkWord.classList.toggle("close-off");
+  lightWord.classList.toggle("close-off");
 }
 
 function changeMode() {
@@ -53,6 +57,8 @@ function changeMode() {
   loginDark.classList.toggle("login-light");
   news.classList.toggle("newsLight");
   navList.classList.toggle("nav-list-mode");
+  darkWord.classList.toggle("close-off");
+  lightWord.classList.toggle("close-off");
   mode();
   savingMode();
 }

@@ -19,16 +19,16 @@ const headerHtml = `<!-- This is the search pop up -->
         alt=""
         onclick="toggleLogin();"
       />
-      <div class="login-popup">
+      <form class="login-popup" action="login.php" method="post">
         <h2>log In</h2>
-        <input placeholder="Email Address" type="email">
-        <input placeholder="Enter password" type="password">
+        <input placeholder="Email Address" type="email" name="email">
+        <input placeholder="Enter password" type="password" name="passwd">
         <p> <a href="passwd-recover.html">Forgot your password?</a></p>
-        <button>Log In</button>
+        <input type="submit"></input>
         <p>Don’t have an account yet? <span onclick="toggleSignup(); toggleLogin();">Register now</span></p>
         <p>or</p>
         <button><img src="img/Google__G__Logo.svg.png" alt=""><span>Sign in with Google</span></button>
-    </div>
+    </form>
 </div>
     <!-- This is the signup pop up -->
     <div class="login-bg js-signup login-off">
@@ -38,12 +38,12 @@ const headerHtml = `<!-- This is the search pop up -->
             alt=""
             onclick="toggleSignup();"
           />
-          <div class="login-popup">
+          <form class="login-popup" action="register.php" method="post">
             <h2>Create your account</h2>
             <input placeholder="Email Address" type="email">
             <input placeholder="Enter password" type="password">
             <p> <a href="passwd-recover.html">*Required: 8 chars, 1 capital letter, 1 number</a></p>
-            <button>DONE</button>
+            <input type="submit"></input>
             <p>Already have an account? <span onclick="toggleSignup(); toggleLogin();" style="cursor: pointer;">Login</span></p>
             <p style="color: rgba(0, 0, 0, 0.482); font-size: 14px;">or</p>
             <button><img src="img/Google__G__Logo.svg.png" alt=""><span>Sign in with Google</span></button>
@@ -87,7 +87,8 @@ const headerHtml = `<!-- This is the search pop up -->
           src="img/light-mode.png"
           alt=""
         />
-        <span style="cursor: pointer;">Light Mode</span>
+        <span style="cursor: pointer;" class="js-dark-light-2">Light Mode</span>
+        <span style="cursor: pointer;" class="js-dark-light close-off">Dark Mode</span>
       </li>
       </a>
     <li class="nav-list-main"><a href="about.html">About Us</a></li>
