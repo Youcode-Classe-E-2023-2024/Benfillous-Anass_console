@@ -1,3 +1,5 @@
+const bleuLogo = document.querySelector(".js-logo-bleu");
+const darkLogo = document.querySelector(".js-logo-dark");
 const navList = document.querySelector(".nav-list");
 const searchBar = document.querySelector(".search-background");
 const body = document.querySelector(".body");
@@ -20,6 +22,8 @@ const about = document.querySelector(".js-about");
 let checker = localStorage.getItem("mode");
 
 if (checker === "on") {
+  bleuLogo.classList.toggle("logo-off");
+  darkLogo.classList.toggle("logo-off");
   darkMode.classList.toggle("lightOff");
   lightMode.classList.toggle("lightOff");
   menuLight.classList.toggle("menuOff");
@@ -35,6 +39,8 @@ if (checker === "on") {
 }
 
 function changeMode() {
+  bleuLogo.classList.toggle("logo-off");
+  darkLogo.classList.toggle("logo-off");
   darkMode.classList.toggle("lightOff");
   lightMode.classList.toggle("lightOff");
   menuLight.classList.toggle("menuOff");
