@@ -132,7 +132,7 @@ const headerHtml = `<!-- This is the search pop up -->
       <button onclick="toggleLogin(); closeNav();" class="login js-login">Log in</button>
       <div class="light-li">
         <img
-          class="light-mode js-light"
+          class="light-mode js-light light-mode-phone"
           src="img/light-mode.png"
           alt=""
           onclick="
@@ -140,7 +140,7 @@ const headerHtml = `<!-- This is the search pop up -->
             "
         />
         <img
-          class="light-mode js-dark lightOff"
+          class="light-mode js-dark lightOff light-mode-phone"
           src="img/dark-mode.png"
           alt=""
           onclick="
