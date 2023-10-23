@@ -2,10 +2,18 @@ html {
   width: 100%;
 }
 
+body {
+  margin: 0 !important;
+  padding: 0;
+}
+
 main {
-  width: 90%;
+  margin-top: 70px;
+  width: 100%;
+  height: 925px;
   display: flex;
   justify-content: center;
+
 }
 
 .recover {
@@ -17,8 +25,8 @@ main {
   padding: 40px 40px;
   width: 350px;
   height: 300px;
-  top: 25%;
-  left: 36%;
+  box-shadow: rgb(55, 55, 55) 0px 5px 15px;
+  border-radius: 30px;
 }
 
 .login-off {
@@ -112,4 +120,12 @@ button span {
   left: 36%;
   width: 397px;
   height: 395px;
+}
+
+@media (max-width: 500px) {
+  .recover {
+    width: 300px;
+    height: 295px;
+  }
+
 }
