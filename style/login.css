@@ -1,4 +1,3 @@
-
 button {
   cursor: pointer;
 }
@@ -11,12 +10,14 @@ button {
   align-items: center;
   background-color: #d9d9d9;
   box-shadow: rgb(55, 55, 55) 0px 5px 15px;
-  border-radius: 30px;;
+  border-radius: 30px;
   padding: 40px 40px;
   width: 350px;
   height: 345px;
-  top: 25%;
-  left: 36%;
+  margin: 5% auto; /* Only centers horizontally not vertically! */
+  left: 0;
+  right: 0;
+  top: 10%;
 }
 
 .login-off {
@@ -54,7 +55,6 @@ button {
 
 .login-popup p:nth-child(4) a {
   color: black;
-
 }
 
 .login-popup button {
@@ -73,27 +73,27 @@ button {
 }
 
 button img {
-    margin-right:10px 0;
+  margin-right: 10px 0;
 }
 
 button span {
-    justify-self: center;
-    align-self: center;
-    font-weight: 700;
-    color: #7F7F7F;
-    font-size: 18px;
-  }
-  
-  .login-popup p:nth-child(6) {
-    font-size: 12px;
-  }
-  
-  .login-popup p span {
-  cursor: pointer;
-    color: #ff7628;
+  justify-self: center;
+  align-self: center;
+  font-weight: 700;
+  color: #7f7f7f;
+  font-size: 18px;
 }
 
-.login-close{
+.login-popup p:nth-child(6) {
+  font-size: 12px;
+}
+
+.login-popup p span {
+  cursor: pointer;
+  color: #ff7628;
+}
+
+.login-close {
   position: fixed;
   right: 0;
   margin: 40px 80px;
@@ -114,3 +114,7 @@ button span {
   font-weight: 300;
 }
 
+@media (max-width: 1500px) {
+  .login-popup {
+  }
+}

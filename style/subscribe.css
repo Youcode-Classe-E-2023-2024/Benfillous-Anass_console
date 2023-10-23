@@ -1,11 +1,20 @@
 html {
     width: 100%;
   }
-  
-  main {
-    width: 90%;
+  body {
+    margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+  main {
+    width: 90%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
   }
   
   .subscribe {
@@ -19,8 +28,6 @@ html {
     padding: 40px 40px;
     width: 350px;
     height: 300px;
-    top: 25%;
-    left: 36%;
   }
   
   .login-off {
@@ -98,20 +105,4 @@ html {
     .subscribe p span {
     cursor: pointer;
       color: #ff7628;
-  }
-  
-  .login-close{
-    position: fixed;
-    right: 0;
-    margin: 40px 80px;
-  }
-  
-  .black-bg {
-    position: absolute;
-    z-index: 7;
-    background-color: rgba(0, 0, 0, 0);
-    top: 25%;
-    left: 36%;
-    width: 397px;
-    height: 395subscribe
   }
