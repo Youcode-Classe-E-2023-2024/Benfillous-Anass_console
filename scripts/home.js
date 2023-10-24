@@ -93,7 +93,7 @@ const newsArr = [
 let i = 0;
 const removeBtn = document.querySelector(".js-remove-btn");
 function newsGen() {
-  const max = 4 + i;
+  const max = 5 + i;
   for (; i < max && i < newsArr.length; i++) {
     for (let idx = 0; idx < newsElm.length; idx++) {
       newsElm[idx].innerHTML += `<div class="news js-new-news-light">      

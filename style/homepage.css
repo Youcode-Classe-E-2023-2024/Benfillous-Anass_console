@@ -282,8 +282,12 @@ main {
   }
   .news {
     flex-direction: column;
-    height: 70%;
+    height: 90%;
     width: 100%;
+  }
+
+  .text-side {
+    padding: 20px 10px;
   }
 
   .news img {

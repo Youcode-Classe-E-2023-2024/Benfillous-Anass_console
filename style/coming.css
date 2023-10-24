@@ -65,7 +65,7 @@ main {
 
 .cards {
   width: 100%;
-  height: 60%;
+  height: 1300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -119,7 +119,14 @@ main {
   .card {
     width: 80%;
     height: 100%;
+    margin-bottom: 20px;
+  }
+  .card h2, .card p {
     margin-bottom: 30px;
+  }
+
+  .card h2 {
+    font-size: 28px;
   }
   main {
     margin-bottom: 300px;

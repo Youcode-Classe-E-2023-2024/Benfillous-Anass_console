@@ -91,7 +91,7 @@ const headerHtml = `<!-- This is the search pop up -->
         <span style="cursor: pointer;" class="js-dark-light close-off">Dark Mode</span>
       </li>
       </a>
-    <li class="nav-list-main"><a href="about.html">About Us</a></li>
+    <li class="nav-list-main"><a href="about.html" class="nav-about">About Us</a></li>
   </ul>
   <nav class="nav-bar">
     <span>

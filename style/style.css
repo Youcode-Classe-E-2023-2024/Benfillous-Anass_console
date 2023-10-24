@@ -65,6 +65,10 @@ header {
   cursor: pointer;
 }
 
+.close-icon {
+  order: 3;
+}
+
 .search-icon {
   justify-self: flex-start;
 }
@@ -133,9 +137,12 @@ input[type="text"] {
   font-size: 25px;
   font-weight: 700;
   color: white;
+  font-size: 30px;
 }
 .nav-list-main a {
   color: white;
+  font-size: 30px;
+
 }
 
 .bell-icon,
@@ -312,7 +319,7 @@ input[type="text"] {
 footer {
   justify-self: flex-end;
   background-color: #121212;
-  height: 200px;
+  height: 130px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -359,6 +366,9 @@ footer p {
   }
   .nav-list-main {
     text-align: center;
+  }
+  .login {
+    order: 1;
   }
 }
 
