@@ -88,7 +88,46 @@ const newsArr = [
       "Grand Theft Auto feels like it's whole worlds away from Fortnite, but it could still cross over the way many IPs have done before.",
     writer: " Michael Brandon Ingram",
   },
-];
+  {
+    img: "img/far-cry-3-vaas-1.avif",
+    game: "FAR CRY",
+    title: "Far Cry 7 Rumors Make It Sound Like an Amalgamation of FC3 and FC5",
+    description:
+      "Based on the information that has leaked so far about a possible Far Cry 7, the game could be shaping up to be a combination of FC3 and FC5.",
+    writer: "J. Scott Thurlow",
+  },
+  {
+    img: "img/steelseries-new-apex-9-mini-gaming-keyboard-gamerant-deals-content.avif",
+    game: "AMAZON",
+    title: "Get the SteelSeries New Apex 9 Mini Gaming Keyboard for the Discounted Price of $83.45",
+    description:
+      "Amazon has slashed the price of SteelSeries New Apex 9 Mini to a new low of $ 83.45 for a limited time only, so don't miss out!",
+    writer: " Matti Robinson",
+  },
+  {
+    img: "img/hawkeye-1.avif",
+    game: "MCU",
+    title: "Almost Every MCU Disney Plus Show Could Have Been A Movie",
+    description:
+      "The MCU has had a stellar track record for the most part, but it's hard to say the same for their television series.",
+    writer: "Cameron Miller",
+  },
+  {
+    img: "img/mr-negative-red-hood.avif",
+    game: "SPIDER-MAN 2",
+    title: "Marvel's Spider-Man 2's Mr. Negative Actor Discusses How DC's Red Hood Informed the Marvel Villain",
+    description:
+      "During a recent Game Rant interview,Mr. Negative's Stephen Oyoung discussed how his portrayal of Red Hood informed his returning Spider-Man 2 villain.",
+    writer: "Cameron Swan",
+  },
+  {
+    img: "img/battlestar-galactica-war-of-the-gods-part-2.avif",
+    game: "BATTLESTAR GALACTICA",
+    title: "Battlestar Galactica: The Beings of Light, Explained",
+    description:
+      "Get to know that angels who helped the people of Kobol develop the civilization that would become the Twelve Colonies in Battlestar Galactica.",
+    writer: "Arianne Gift",
+  }];
 
 let i = 0;
 const removeBtn = document.querySelector(".js-remove-btn");
