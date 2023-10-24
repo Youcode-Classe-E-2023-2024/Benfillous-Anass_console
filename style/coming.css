@@ -1,8 +1,8 @@
 /* Styles for the main content section */
 
- body{
+body {
   height: 2000px;
- }
+}
 
 main {
   width: 100%;
@@ -58,7 +58,10 @@ main {
 .img-hero {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
+
+
 
 .cards {
   width: 100%;
@@ -91,10 +94,14 @@ main {
 }
 
 @media (max-width: 800px) {
-  .container p{
+  .hero {
+    height: 200px;
+  }
+
+  .container p {
     display: none;
   }
-  .container div{
+  .container div {
     width: 100%;
   }
   h1 {
@@ -116,6 +123,5 @@ main {
   }
   main {
     margin-bottom: 300px;
-
   }
 }

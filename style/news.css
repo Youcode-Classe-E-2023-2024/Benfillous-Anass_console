@@ -55,10 +55,19 @@ main {
 .news {
   display: flex;
   background-color: #1e1e1e;
-  width: 880px;
-  height: 191px;
+  width: 80%;
+  height: 220px;
   margin: 30px 0;
   border-bottom: 1px solid #a39e9e;
+  overflow: hidden !important;
+  border-radius: 10px;
+  transition: 1s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.news:hover {
+  transform: scale(1.05);
+  transition: 1s;
 }
 
 .news-light {
@@ -75,8 +84,9 @@ main {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   gap: 10px;
-  padding: 20px;
+  padding: 0  20px;
 }
 .text-side h2 {
   font-size: 24px;
@@ -95,11 +105,15 @@ main {
   font-weight: 700;
 }
 
-@media (max-width: 1000px) {
-  .hero {
-  background: url(/img/mini-god-of-war-ragnarok-ngplus-homepage-hero-banner-desktop-01-en-31mar23.jpg) no-repeat;
-  }
 
+@media (max-width: 1000px) {
+  main {
+    margin: 30px;
+  }
+  .hero {
+    background: url(/img/mini-god-of-war-ragnarok-ngplus-homepage-hero-banner-desktop-01-en-31mar23.jpg) no-repeat;
+  }
+  
   .hero a {
     align-self: flex-end;
   }
@@ -128,8 +142,11 @@ main {
   }
   .news {
     flex-direction: column;
-    height: 70%;
+    height: 80%;
     width: 100%;
+  }
+  .text-side {
+    height: 300Px;
   }
 
   .news img {
@@ -137,7 +154,14 @@ main {
   }
 
   .fixed-side {
-   display: none;
+    display: none;
   }
+  
+}
 
+@media (max-width: 500px) {
+  .hero {
+    background: url(/img/godofwar-phone.jpg) no-repeat;
+    border-radius: 10px;
+  }
 }

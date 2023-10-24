@@ -74,7 +74,7 @@ const headerHtml = `<!-- This is the search pop up -->
     <li class="nav-list-main"><a href="coming.html">Coming Soon</a></li>
     <li class="nav-list-main nav-list-main-light">
       <a href="subscribe.html">
-        <img class="bell-icon" src="img/notif-icon.png" alt="" />
+        <img class="bell-icon bell-icon-hover" src="img/notif-icon.png" alt="" />
         Newsletter
       </a>
     </li>
@@ -117,12 +117,12 @@ const headerHtml = `<!-- This is the search pop up -->
       <a href="subscribe.html">
       <div class="newsletter">
           <img
-            class="js-bell-dark js-bell-dark-list"
+            class="bell-icon-hover js-bell-dark js-bell-dark-list"
             src="img/notif-icon.png"
             alt=""
           />
           <img
-            class="js-bell-light js-bell-light-list bellOff"
+            class="bell-icon-hover js-bell-light js-bell-light-list bellOff"
             src="img/bell-light.png"
             alt=""
           />

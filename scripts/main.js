@@ -17,10 +17,7 @@ const darkMode = document.querySelector(".js-dark");
 const lightWord = document.querySelector(".js-dark-light-2");
 const darkWord = document.querySelector(".js-dark-light");
 const news = document.querySelector(".js-news");
-const sectionTitle = document.querySelector(".js-section-title");
-const sectionTitle2 = document.querySelector(".js-section-title2");
 const about = document.querySelector(".js-about");
-
 let checker = localStorage.getItem("mode");
 
 if (checker === "on") {

@@ -13,7 +13,7 @@ body {
 }
 
 .body-light {
-  background-color: rgba(255, 255, 255, 0.711);
+  background-color: rgb(240, 240, 240);
 }
 
 a {
@@ -28,7 +28,7 @@ header {
 }
 
 .header-light {
-  background: rgba(190, 189, 189, 0.171);
+  background: white;
 }
 
 .nav-list {
@@ -187,6 +187,15 @@ input[type="text"] {
 .logo {
   width: 180px;
   height: 43px;
+  transition: 1s;
+}
+
+.logo:hover, .bell-icon-hover:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+.bell-icon-hover {
+  transition: 1s;
 }
 
 .logo-off {
@@ -199,6 +208,10 @@ input[type="text"] {
   justify-content: flex-start;
   align-items: center;
   color: white;
+}
+
+.newsletter:hover {
+  color: #b2aeae;
 }
 
 .newsletter img {
@@ -215,9 +228,17 @@ input[type="text"] {
   cursor: pointer;
 }
 
+.login:hover {
+  background-color: #b2aeae;
+}
+
 .login-light {
   background-color: rgb(40, 83, 199);
   color: white;
+}
+
+.login-light:hover {
+  background-color: rgb(4, 54, 193);
 }
 
 .light-li {
@@ -230,6 +251,17 @@ input[type="text"] {
   width: 28px;
   height: 28px;
   cursor: pointer;
+  transition: 1s;
+
+}
+
+.light-mode:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+.news-light-mode {
+  background-color: white !important;
 }
 
 .lightOff {
@@ -240,8 +272,40 @@ input[type="text"] {
   display: none !important;
 }
 
+.newsLight:hover {
+  color: #413f3f;
+}
+
+.btn-container {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  justify-content: center;
+}
+
+.see-more-btn {
+  align-self: flex-end;
+  width: 250px;
+  height: 35px;
+  background-color: #FF7628;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  transition: 1s;
+}
+
+.see-more-btn:hover {
+  background-color: #ff7728a1;
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+.remove-btn {
+  display: none;
+}
+
 .newsLight {
-  color: black;
+  color: black !important;
 }
 
 /* Styles for the footer section */
@@ -264,6 +328,7 @@ footer {
 
 footer img {
   margin-top: 20px;
+  cursor: pointer;
 }
 
 footer p {
