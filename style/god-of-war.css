@@ -7,7 +7,7 @@
 
 body {
   width: 100%;
-  height: 2000px;
+  height: 1800px;
   background-image: url(/img/god-of-war-ragnarok-stone-texture-background-3840x1715.jfif);
 }
 
@@ -58,7 +58,7 @@ h1 {
 .godofwar-cards {
     display: flex;
     justify-content: space-evenly;
-    height: 90%;
+    height: 50%;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -94,3 +94,12 @@ h1 {
     transition: 0.7s;
 }
 
+@media (max-width: 960px)
+{
+    body {
+        height: 2000px;
+    }
+    .godofwar-cards {
+        height: 90%;
+    }
+}
