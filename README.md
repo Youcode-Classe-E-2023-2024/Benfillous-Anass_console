@@ -1,4 +1,4 @@
-# consolePlus Gaming News Website
+# ConsolePlus Gaming News Website
 
 Welcome to the consolePlus gaming news website repository. This website is dedicated to providing the latest updates and news about the gaming industry. You can access the website [here](https://youcode-classe-e-2023-2024.github.io/Benfillous-Anass_console/).
 
