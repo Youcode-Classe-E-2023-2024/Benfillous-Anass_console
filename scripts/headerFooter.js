@@ -150,7 +150,7 @@ const headerHtml = `<!-- This is the search pop up -->
       </div>
     </div>
   </nav>`;
-const footerHtml = `<img class="logo" src="img/logo-dark.png" alt="">
+const footerHtml = `<a href="index.html"><img class="logo" src="img/logo-dark.png" alt=""><a/>
 <p>Copyright © 2023 Consoleplus.com</p>`;
 
 const generatingHeader = document.getElementsByClassName("headerGen");
