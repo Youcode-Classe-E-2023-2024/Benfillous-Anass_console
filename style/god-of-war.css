@@ -1,16 +1,96 @@
-body {
-    width: 100%;
-    height: 5000px;
+@import url('https://fonts.cdnfonts.com/css/oldion');
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-video {
-    margin-top: 20px;
-    width: 100%;
+body {
+  width: 100%;
+  height: 2000px;
+  background-image: url(/img/god-of-war-ragnarok-stone-texture-background-3840x1715.jfif);
+}
 
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
 }
 
 .container {
-   height: 5000px;
-   width: 300px;
-   background-color: red;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  
 }
+video {
+  width: 100%;
+  justify-self: flex-start;
+}
+
+.black-cuter {
+    background: url(/img/gow-ps-bg-bottom-border-xl.webp) no-repeat;
+    height: 50px;
+    width: 100%;
+}
+
+.god-of-war-container {
+  height: 900px;
+  width: 100%;
+  background-image: url(/img/god-of-war-ragnarok-stone-texture-background-3840x1715.jfif);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30Px;
+}
+
+h1 {
+    font-family: 'Oldion', sans-serif;
+    margin-top: 30px;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.godofwar-cards {
+    display: flex;
+    justify-content: space-evenly;
+    height: 90%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.gow-card {
+    width: 300Px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-shrink: 1;
+}
+
+.gow-cards p, .gow-cards h2 {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    font-weight: 400;
+    flex-grow: 1;
+}
+
+.card-img {
+    width: 100%;
+}
+.card-img img {
+    border-radius: 20px;
+    width: 100%;
+    transition: 0.7s;
+
+}
+
+.card-img img:hover {
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
